@@ -14,7 +14,7 @@ const MlApiClient = ({host, port}) => {
 
     const getCollectivePredictions = (modelName, startDate, endDate, callback, failureCallback = () => {}) => {
         apiClient.get(
-            `/collective/prediction?modelName=${modelName}&startDate=${startDate}$endDate=${endDate}`,
+            `/collective/prediction?modelName=${modelName}&startDate=${startDate}&endDate=${endDate}`,
             callback,
             failureCallback
         );

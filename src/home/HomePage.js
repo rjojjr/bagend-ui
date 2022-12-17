@@ -4,7 +4,7 @@ import OpenClosePage from "../charts/OpenClosePage";
 const HomePage = () => {
 
     return (
-        <div>
+        <div className={'Container'}>
             <h1>ML Stock Predictor</h1>
             <p>This app predicts stock prices</p>
             <OpenClosePage/>

@@ -28,6 +28,42 @@
   color: #61dafb;
 }
 
+.Container {
+  position: absolute;
+  width: 80%;
+  min-height: 100%;
+  background-color: #323141;
+}
+
+.Form-label {
+  margin-right: 0.5em;
+}
+
+.App-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.App-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Flex {
+  display: flex;
+}
+
+.Margin-10 {
+  margin: 1em;
+}
+
+.App-card {
+  background-color: #323141;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

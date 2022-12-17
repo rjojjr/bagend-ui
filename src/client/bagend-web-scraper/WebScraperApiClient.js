@@ -16,8 +16,23 @@ const WebScraperApiClient = ({host, port}) => {
         apiClient.get('/tickers', callback, failureCallback);
     };
 
+    const createTickerTarget = (priority, tickerSymbol, businessSector, companyName, callback, failureCallback = () => {}) => {
+        apiClient.post('', {
+            priority,
+            tickerSymbol,
+            businessSector,
+            companyName
+        }, callback, failureCallback);
+    };
+
+    const getTickerTargets = (callback, failureCallback = () => {}) => {
+        apiClient.get('', callback, failureCallback);
+    };
+
     return {
-        getAvailableStockTickers
+        getAvailableStockTickers,
+        createTickerTarget,
+        getTickerTargets
     };
 
 };
